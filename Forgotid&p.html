@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #021B1d;
+            margin: 0px;
+            
+        }
+        .container{
+            max-width:1450px;
+            max-height: 760px;
+
+        }
+        #brandimage{
+            width: 50%;
+            height: 760.2px;
+            position: relative;
+            left: 50%;
+        }
+        #logoimage{
+            position: relative;
+            left: -33%;
+            top: -485px;
+            
+        }
+        .cards{
+            width: 420px;
+            height: 417px;
+            background-color: #BB0508;
+            position: relative;
+            top: -520px;
+            left: 120px;
+            border-radius: 62px;
+        }
+        p{
+            
+            color: #E8EF1F;
+            font-size: 40px;
+            font-family: 'Times New Roman', Times, serif;
+            position: relative;
+            left: 130px;
+            top: 20px;
+            border-color: black;
+
+        }
+        #forgotform{
+            position: relative;
+            left: 70px;
+            top: 20px;
+           
+        }
+        
+        
+        #forget{
+            position: relative;
+            left: 180px;
+            background-color: #BCBE77;
+            font-size: 15px;
+            font-family: sans-serif
+        }
+        input[type=radio],label{
+            color: white;
+            padding-left: 10px;
+            font-size: 25px;
+            
+        }
+        #submitbutton,select{
+            position: relative;
+            left: 20%;
+            padding: 10px;
+            font-size: 20px;
+            color: aliceblue;
+            border-radius: 50px;
+            border: none;
+            background-color: #043A08;
+           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        #registerbutton{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            position: relative;
+            left: 5px;
+            padding: 10px;
+            font-size: 20px;
+            color: aliceblue;
+            border-radius: 50px;
+            border: none;
+            background-color: #043A08;
+        }
+        #demoidbutton{
+            position: relative;
+            top: 10px;
+            left: 16%;
+            top: -573px;
+            padding: 5px;
+            font-size: 20px;
+            color: aliceblue;
+            border-radius: 50px;
+            border: none;
+            background-color: #043A08;
+        }
+
+       
+        
+        
+    </style>
+</head>
+<body>
+  
+    <div class="container">
+        <img id="brandimage" src="Unknown-2.jpg" alt="brandimage">
+        <img id="logoimage" src="Screenshot_2024-12-17_at_5.06.45_PM-removebg-preview-2.png" alt="logo" 
+        width="174px" height="188px">
+        <div class="cards"><p>FORGOT</p>
+            <form id="forgotform" onsubmit="return validateform()">
+               
+                 <input type="radio" id="forgetid" name="newid" value="forgetid" onclick=""> 
+                 <label for="forgetid">Forget Id</label>
+                 <br>
+                 <br>
+        
+                 <input type="radio" id="forgetpassword" name="newid" value="forgetpassword">
+                 <label for="forgetpassword">Forget Password</label>
+                 <br>
+                 <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+                 <input id="submitbutton" type="submit" name="clickhere">
+                 <br>
+                 
+                 </div></form>
+        <form action="interface1.html"><button id="demoidbutton">Play with Demo ID</button></form>
+    
+    </div>
+    
+      <script src="forgot.js"></script>
+</body>
+</html>

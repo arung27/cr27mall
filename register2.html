@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #021B1d;
+            margin: 0px;
+            
+        }
+        .container{
+            max-width:1450px;
+            max-height: 760px;
+
+        }
+        #brandimage{
+            width: 50%;
+            height: 760.2px;
+            position: relative;
+            left: 50%;
+        }
+        #logoimage{
+            position: relative;
+            left: -32%;
+            top: -578px;
+            
+        }
+        .cards{
+            width: 384px;
+            height: 464px;
+            background-color: #BB0508;
+            position: relative;
+            top: -615px;
+            left: 145px;
+            border-radius: 62px;
+        }
+        #registertext{
+            
+            color: #E8EF1F;
+            font-size: 40px;
+            font-family: 'Times New Roman', Times, serif;
+            position: relative;
+            left: 123px;
+            top: 30px;
+            border-color: black;
+
+        }
+        #loginform{
+            position: relative;
+            left: 50px;
+            top: 20px;
+           
+        }
+        
+        
+        
+        input[type=text],select{
+            width: 318px;
+            padding: 12px;
+            background-color: #BB0508;
+            font-size: 20px;
+            box-sizing: border-box;
+            border: none;
+            border-bottom: #ffffff 12px;
+        }
+        #submitbutton,select{
+            padding: 10px;
+            font-size: 15px;
+            color: aliceblue;
+            border-radius: 50px;
+            border: none;
+            background-color: #043A08;
+           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        #loginbutton{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            position: relative;
+            left: 280px;
+            top: -787px;
+            padding: 10px;
+            font-size:15px;
+            color: aliceblue;
+            border-radius: 50px;
+            border: none;
+            background-color: #043A08;
+        }
+        #demoidbutton{
+            position: relative;
+            top: 10px;
+            padding: 5px;
+            font-size: 20px;
+            color: aliceblue;
+            border-radius: 50px;
+            border: none;
+            background-color: #043A08;
+        }
+
+       
+        
+        
+    </style>
+</head>
+<body>
+  
+    <div class="container">
+        <img id="brandimage" src="Unknown-2.jpg" alt="brandimage">
+        <img id="logoimage" src="Screenshot_2024-12-17_at_5.06.45_PM-removebg-preview-2.png" alt="logo" 
+        width="144px" height="155.08px">
+        <div class="cards">
+            
+            <p id="registertext">Register</p>
+            <br>
+            <form id="loginform" action="interface1.html" onsubmit="return validform()">
+               
+                 <input type="text" id="pass" name="useridd" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                 <br>
+                 <br>
+                 <br>
+                 
+                 <input type="text" id="cpass" name="password" placeholder="Confirm Password">
+                 
+         <br>
+         <br>
+         <br>
+                 <button id="submitbutton">SUBMIT</button>
+                 
+                 <br>
+                 
+                 <button id="demoidbutton">Play with Demo ID</button></div></form>
+        <form action="login.html"><button id="loginbutton">LOGIN</button></form>
+    
+    </div>
+    
+      <script src="register.js"></script>
+</body>
+</html>

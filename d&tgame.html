@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #021B1d;
+            margin: 0%;
+            /* display: flex;
+            justify-content: center; */
+        }
+        .rect-path{
+            width: 1207px;
+            height: 281px;
+            background-color: red;
+            position: relative;
+            border-radius: 56px;
+            /* left: 87px; */
+            top: 296px;
+            left: 127px;
+            /* display: flex;
+            align-items: center; */
+        }
+        .rect-path1{
+            width: 1207px;
+            height: 63px;
+            background-color: #D9D9D9;
+            border-radius: 56px;
+            position: relative;
+            left: 127px;
+            top: 306px;
+        }
+        .dragonbox{
+            width: 412px;
+            height: 65px;
+            background-color: #04BC0A;
+            border-radius: 6px;
+            position: relative;
+            top: 316px;
+            left: 127px;
+            display: flex;
+            justify-content: center;
+            font-size: 40px;
+        }
+        .tiebox{
+            width: 271px;
+            height: 65px;
+            background-color: #A98E8E;
+            border-radius: 6px;
+            position: relative;
+            top: 251px;
+            left: 595px;
+            display: flex;
+            justify-content: center;
+            font-size: 40px;
+            color: #A90202;
+        }
+        .tigerbox{
+            width: 412px;
+            height: 65px;
+            background-color: #0042A6;
+            border-radius: 6px;
+            position: relative;
+            top: 186px;
+            left: 922px;
+            display: flex;
+            justify-content: center;
+            font-size: 40px;
+            color: #EAD70A;
+        }
+        #double{
+            font-size: 15px;
+            position: relative;
+            top: 32px;
+            left: -70px;
+        }
+        #tenx{
+            font-size: 15px;
+            position: relative;
+            top: 32px;
+            left: -40px;
+        }
+        #double2{
+            font-size: 15px;
+            position: relative;
+            top: 32px;
+            left: -60px;
+        }
+        .circle1{
+            width: 27px;
+            height: 26px;
+            background-color: #06FF0E;
+            border-radius: 100%;
+            position: relative;
+            left: 30px;
+            top: 20px;
+            display: flex;
+            justify-content: center;
+            font-size: large;
+        }
+        .circle2{
+            width: 27px;
+            height: 26px;
+            background-color: #0042A6;
+            border-radius: 100%; 
+            position: relative;
+            left: 70px;
+            top: -5px;
+            display: flex;
+            justify-content: center;
+            font-size: large;
+            color: white;
+        }
+        .circle3{
+            width: 27px;
+            height: 26px;
+            background-color: #D8E1E4;
+            border-radius: 100%;
+            position: relative;
+            left: 108px;
+            top: -30px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+        .bidstart{
+            width: 603.5px;
+            height: 63px;
+            border-right: black;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            font-size: x-large;
+            border-right: 3px solid black;
+            
+        }
+        .bidends{
+            width: 603.5px;
+            height: 63px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            left: 50%;
+            top: -100%;
+            font-size: x-large;
+        }
+        .image1{
+            width: 100%;
+            height: 300px;
+            margin-bottom: -10px;
+            display: flex;
+            justify-content: center;
+        }
+        .container1{
+            margin-top: -290px;
+        }
+        #dtimage{
+            width: 1207px;
+            height: 300px;
+        }
+        .card1{
+            border: 3px solid white;
+            width: 120px;
+            height: 150px;
+            border-radius: 36px;
+            position: relative;
+            top: -170px;
+            left: 10px;
+        
+            
+        }
+        .card2{
+            border: 3px solid white;
+            width: 120px;
+            height: 150px;
+            border-radius: 36px;
+            position: relative;
+            top: -330px;
+            left: 1077px;
+        }
+        #hukumekka{
+            width: 120px;
+            height: 150px;
+            border-radius: 36px;
+        }
+        #backcard1{
+            width: 120px;
+            height: 150px;
+            border-radius: 36px;
+           
+        }
+        #paan{
+            width: 120px;
+            height: 150px;
+            border-radius: 36px;
+
+        }
+       
+        .cardf{
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            width: 120px;
+            height: 150px;
+            transition: all 0.5s;
+            
+        }
+        .card1:hover .cardb{
+            transform: rotateY(180deg);
+        }
+        .card1:hover .cardf{
+            transform: rotateY(0deg);
+        }
+        .cardb{
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            width: 120px;
+            height: 150px;
+            backface-visibility: hidden;
+            transition: all 0.7s;
+
+        }
+        .cardff{
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            width: 120px;
+            height: 150px;
+        }
+        .card2:hover .cardbb{
+            transform: rotateY(180deg);
+        }
+        .card2:hover .cardff{
+            transform: rotateY(0deg);
+        }
+
+        .cardbb{
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            width: 120px;
+            height: 150px;
+            transition: all 0.7s;
+            backface-visibility: hidden;
+        }
+        #backcard2{
+            width: 120px;
+            height: 150px;
+            border-radius: 36px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="image1"><div class="image11"><img src="ChatGPT Image Apr 12, 2025 at 08_26_47 AM.png" alt="D&t image" id="dtimage">
+        <div class="card1"><div class="cardf"><img id="hukumekka" src="Ace_of_spades.svg.png" alt="hukumakaekka"></div><div class="cardb"><img id="backcard1" src="images.png" alt=""></div></div>
+        <div class="card2"><div class="cardff"><img id="paan" src="istockphoto-166089307-612x612-2.jpg" alt="paankaraja"></div><div class="cardbb"><img id="backcard2" src="images.png" alt=""></div></div></img></div></div>
+    <div class="container1">
+        <div class="rect-path"><div class="circle1"><b>D</b></div><div class="circle2"><b>T</b></div><div class="circle3"><b>Tie</b></div></div>
+    
+    <div class="rect-path1"><div class="bidstart">Bid Start in <br>00:05</div><div class="bidends">Bid ends in <br>00:15</div></div>
+    <div class="dragonbox">
+        <b>Dragon</b> <p id="double">2x</p>
+    </div>
+    <div class="tiebox"><b>Tie</b> <p id="tenx">10x</p></div>
+    <div class="tigerbox"><b>Tiger</b> <p id="double2">2x</p></div>
+</div>
+</body>
+</html>
